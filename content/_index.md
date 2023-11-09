@@ -16,3 +16,4 @@ draft = false
  |RACES D2 Net            |Mondays @ 8:30 PM  |444.450 +5 114.8 |Weekly district RACES net  |
  |West TX Pathfinders Net |Mondays @ 7:00 PM  |462.675 +5 141.3 |GMRS Net for Lubbock Area  |
 ***
+![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Flubbockhamradio.org&label=Visitors&labelColor=%2337d67a&countColor=%23d9e3f0&style=plastic)
