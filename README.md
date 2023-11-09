@@ -28,21 +28,26 @@ Open the file you just created in vs code and edit the markdown to add your post
 
 In the header section between the three +++ pluses you will see the post meta data.
 ```
-+++
+---
 title: "My First Post"
 date: 2022-11-20T09:03:20-08:00
 draft: true
-+++
+images:
+tags:
+---
 ```
 
-Edit your title and set draft to false
+Edit your title and set draft to false, and add a tag. Contesting, General, and Emcomm show up on the home page.
 
 ```
-+++
+---
 title: "My Post title"
 date: 2022-11-20T09:03:20-08:00
 draft: false
-+++
+images:
+tags:
+  - Contesting
+---
 ```
 
 
