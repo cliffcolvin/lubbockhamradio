@@ -1,5 +1,5 @@
 ---
-title: "KS5Z at ARRL Sweeps 2023 Recruiting"
+title: "KS5Z @ ARRL Sweeps 2023 Recruiting"
 date: 2023-11-08T20:40:43-06:00
 draft: false
 toc: false
