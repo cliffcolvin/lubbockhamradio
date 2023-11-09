@@ -1,4 +1,5 @@
 # lubbockhamradio
+![Build & Deploy](https://github.com/cliffcolvin/lubbockhamradio/actions/workflows/hugo.yaml/badge.svg)
 
 The Lubbock, TX ham radio community is a wide spread and vastly diverse group of people and interests. This website [LubbockHamRadio.org](https://lubbockhamradio.org) is meant to give that community a central place to aggregate the happenings in the community.
 
