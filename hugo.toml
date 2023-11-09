@@ -89,6 +89,18 @@ disableHugoGeneratorInject = false
     identifier = "blog"
     name       = "Blog"
     url        = "/posts"
+  [[menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "/about"
+  [[menu.main]]
+    identifier = "contribute"
+    name       = "Add a Page/Post"
+    url        = "/contribute"
+  [[menu.main]]
+    identifier = "home"
+    name       = "Home"
+    url        = "/"
 
   [params.footer]
     trademark = false
