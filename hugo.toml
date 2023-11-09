@@ -91,9 +91,9 @@ disableHugoGeneratorInject = false
     url        = "/posts"
 
   [params.footer]
-    trademark = true
+    trademark = false
     rss = true
-    copyright = true
+    copyright = false
     author = true
 
     topText = []

@@ -1,0 +1,28 @@
+{{ define "main" }}
+<div class="post-content" style="text-align: center;">
+    {{ .Content }}
+</div>
+<main aria-role="main">
+    <div>
+        <br/>
+        <br>
+        <hr>
+        <h1> News:</h1>
+
+        {{ $p := slice "Contesting" "Emcomm" "General" }}
+        {{ range where .Site.Pages "Params.tags" "intersect" $p }}
+
+            <a href="{{ .Permalink }}">{{  .Title }} - {{ time.Format "January 2 2006" .Date }} 
+            <hr/>
+            {{ .Summary }}</a><br/><br/>
+        {{ end }}
+
+
+        {{- with .Site.Params.social }}
+            <div>
+                {{ partial "social-icons.html" . }}
+            </div>
+        {{- end }}
+    </div>
+</main>
+{{ end }}
