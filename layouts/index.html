@@ -1,19 +1,53 @@
 {{ define "main" }}
 <div class="post-content" style="text-align: center;">
     {{ .Content }}
+<h1>Regularly Scheduled Activities</h1>
+<table>
+    <thead>
+        <tr>
+            <th style=text-align:left>Name</th>
+            <th style=text-align:left>Schedule</th>
+            <th style=text-align:left>Where</th>
+            <th style=text-align:left>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style=text-align:left>ARES NET</td>
+            <td style=text-align:left>Mondays @ 8:00 PM</td>
+            <td style=text-align:left>146.940 -.6 179.9</td>
+            <td style=text-align:left>Weekly emcomm net for ARES</td>
+        </tr>
+        <tr>
+            <td style=text-align:left>RACES D2 Net</td>
+            <td style=text-align:left>Mondays @ 8:30 PM</td>
+            <td style=text-align:left>444.450 +5 114.8</td>
+            <td style=text-align:left>Weekly district RACES net</td>
+        </tr>
+        <tr>
+            <td style=text-align:left>West TX Pathfinders Net</td>
+            <td style=text-align:left>Mondays @ 7:00 PM</td>
+            <td style=text-align:left>462.675 +5 141.3</td>
+            <td style=text-align:left>GMRS Net for Lubbock Area</td>
+        </tr>
+        <tr>
+            <td style=text-align:left>Amateur License Exams</td>
+            <td style=text-align:left>3rd Saturday @ 10AM</td>
+            <td style=text-align:left>American Red Cross</td>
+            <td style=text-align:left>Ham License Exam WB5R VE Team</td>
+        </tr>
+    </tbody>
+</table>
 </div>
 <main aria-role="main">
     <div>
         <br/>
-        <br>
-        <hr>
         <h1> News:</h1>
-
+        <hr />
         {{ $p := slice "Contesting" "Emcomm" "General" }}
         {{ range where .Site.Pages "Params.tags" "intersect" $p }}
 
-            <a href="{{ .Permalink }}">{{  .Title }} - {{ time.Format "January 2 2006" .Date }} 
-            <hr/>
+            <a href="{{ .Permalink }}">{{  .Title }} - {{ time.Format "January 2 2006" .Date }} Tags: {{ .Params.tags }} <br /><br />
             {{ .Summary }}</a><br/><br/><hr/>
         {{ end }}
 
@@ -25,4 +59,5 @@
         {{- end }}
     </div>
 </main>
+
 {{ end }}
