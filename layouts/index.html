@@ -44,11 +44,30 @@
         <br/>
         <h1> News:</h1>
         <hr />
-        {{ $p := slice "Contesting" "Emcomm" "General" }}
+        {{ $p := slice "Contesting" "Emcomm" "General" "GMRS" }}
         {{ range where .Site.Pages "Params.tags" "intersect" $p }}
-
-            <a href="{{ .Permalink }}">{{  .Title }} - {{ time.Format "January 2 2006" .Date }} Tags: {{ .Params.tags }} <br /><br />
-            {{ .Summary }}</a><br/><br/><hr/>
+        <div style="justify-content: center; align-items:center;">
+            <a href="{{ .Permalink }}">
+                {{ with .Params.resources }}
+                  {{ range . }}
+                    <img
+                    style="margin:auto;display:block;"
+                    src="{{ .src }}" 
+                    width="300px" 
+                    alt="{{ .title }}" 
+                    />
+                  {{ end }}
+                {{ end }}
+                {{  .Title | markdownify }} - {{ time.Format "January 2 2006" .Date }}
+                </a>
+                <br/>
+                Tags: {{ .Params.tags }}
+                <br/>
+                {{ .Summary | markdownify }} <a href="{{ .Permalink }}">Read More...</a>
+            <br/>
+            <hr />
+            <br/>
+        </div>
         {{ end }}
 
 
