@@ -1,7 +1,7 @@
 ---
-title: "Local ARES Net Merging with District Net"
-date: 2023-11-012T11:54:43-06:00
-draft: false
+title: "Ares Net Merging With District"
+date: 2023-11-12T12:07:20-06:00
+draft: true
 toc: false
 images:
 tags:
