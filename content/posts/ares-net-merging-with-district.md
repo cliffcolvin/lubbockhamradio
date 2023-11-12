@@ -1,7 +1,7 @@
 ---
 title: "Ares Net Merging With District"
 date: 2023-11-12T12:07:20-06:00
-draft: true
+draft: false
 toc: false
 images:
 tags:
